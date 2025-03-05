@@ -16,9 +16,25 @@ In the cargo deny [0.16.0](https://github.com/EmbarkStudios/cargo-deny/blob/main
 
 ## Requirements
 
+It's not mandatory, but this CLI is created to help with the `deny.toml` required by [cargo-deny](https://github.com/EmbarkStudios/cargo-deny)
+
 ## Installation
 
+To install you just need to execute
+
+```
+cargo install --locked cd-allow
+```
+
 ## Usage
+
+After you've installed the cd-allow, you just need to execute the `cd-allow` with the desired flags `use the --help` to more information about it
+
+### Adding all OSI-approved licenses to `deny.toml`
+``` 
+> cd my-project/
+> cd-allow --file deny.toml --osi
+```
 
 ## Contributing
 

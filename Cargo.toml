@@ -1,7 +1,16 @@
 [package]
 name = "cd-allow"
 version = "0.1.0"
+authors = [
+  "Nivaldo Melo <nivaldogmelo@tuta.com>"
+]
 edition = "2024"
+description = "A CLI tool to help you fill allowed licenses for cargo-deny"
+readme = "README.md"
+repository = "https://github.com/nivaldogmelo/cd-allow"
+license = "MIT"
+keywords = ["cargo-deny", "license", "spdx"]
+categories = ["command-line-utilities", "config"]
 
 [dependencies]
 anyhow = "1.0.97"
@@ -11,5 +20,4 @@ serde = "1.0.218"
 serde_derive = "1.0.218"
 serde_json = "1.0.140"
 tokio = { version = "1.43.0", features = ["macros", "rt-multi-thread"] }
-toml = "0.8.20"
 toml_edit = "0.22.24"
